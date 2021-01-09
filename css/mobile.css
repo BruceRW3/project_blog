@@ -1,0 +1,13 @@
+@media (max-width: 500px) {
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+  .line {
+    margin: 1.5rem;
+  }
+}
