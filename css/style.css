@@ -45,6 +45,10 @@ img {
   margin-top: 3rem;
   border-radius: 50%;
 }
+
+i {
+  color: var(--secondary-color);
+}
 /* Utility */
 
 /* Navbar */
@@ -90,4 +94,21 @@ header {
   align-items: center;
   text-align: left;
   margin: 0 10rem;
+}
+
+/* Footer */
+.main-footer {
+  height: 5rem;
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+.social i:hover {
+  color: var(--light-color);
+}
+.main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
 }
