@@ -2,6 +2,10 @@
   .container ul {
     margin-top: 1.5rem;
   }
+
+  .container ul a:{
+    margin: 2rem;
+  }
   h1,
   h2 {
     font-size: 2rem;
@@ -30,8 +34,25 @@
     margin: 0 0.2rem;
   }
 
-  
+  .main-footer {
+    background: var(--primary-color);
+  }
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    font-size: px;
+    text-align: center;
+  }
 
-  .main-footer .social {
-    display: none;
+  .footer-content .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    padding-left: 3rem;
+    padding-bottom: 1.2rem;
+    font-size: .8rem;
   }
