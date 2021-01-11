@@ -1,0 +1,139 @@
+@import "root.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(../img/malinda-madugalle-u458kcpgj7s-unsplash.jpg) no-repeat
+    center/cover;
+  min-width: 600px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+p {
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  background: transparent;
+  color: var(--primary-color);
+  padding: 0.7rem;
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+  padding: 0.8rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "footer";
+  justify-content: center;
+}
+
+/* Header */
+.main-header {
+  height: 50vh;
+  grid-area: header;
+  grid-column: 1/5;
+  grid-row: 2;
+  margin: 2rem auto;
+  color: var(--primary-color);
+}
+
+.main-header h1 {
+  font-size: 4rem;
+}
+
+.main-header h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Navigation */
+.main-nav {
+  grid-area: nav;
+  grid-column: 1/5;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.main-nav .current {
+  background: transparent;
+  border-bottom: 1px var(--primary-color) solid;
+}
+
+.main-nav ul li a:hover {
+  background: transparent;
+  border-bottom: 1px var(--primary-color) solid;
+}
+
+/* Blog Links */
+.blog-info {
+  background: var(--secondary-color);
+  display: grid;
+  grid-column: 1/5;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  color: var(--primary-color);
+  padding: 0.5rem;
+}
+
+.blog-info h3 {
+  font-size: 1rem;
+}
+
+.blogOne {
+}
+
+/* Footer */
+.main-footer {
+  grid-area: footer;
+  grid-column: 1/5;
+  background: var(--dark-color);
+  padding: 1rem;
+}
+
+.copyright {
+  color: var(--primary-color);
+}
+
+.copyright p {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.social {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
